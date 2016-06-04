@@ -45,8 +45,8 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="minion.html">Minion CPBR8</a></li>
-                <li class="active"><a href="clockwise.html">Clockwise Intel IoT Roadshow 2015</a></li>
+                <li class="active"><a href="minion.html">Minion CPBR8</a></li>
+                <li><a href="clockwise.html">Clockwise Intel IoT Roadshow 2015</a></li>
               </ul>
             <li><a href="contact.html">Contact</a></li>
           </ul><!--
@@ -60,38 +60,45 @@
 
             <!-- Main component for a primary marketing message or call to action -->
             <div class="jumbotron">
-                <h2 class="text-center">Clockwise: an Intelligent Alarm Clock powered by Intel Edison</h2>
-                
-                <p> Clockwise is your next intelligent alarm clock: it wakes you up by saying out loud the weather conditions and your Google Calendar events for the day in a Bluetooth speaker.</p>
+                <h2 class="text-center">Oficina de Chão CPBR8 Minions</h2>
+                <p> At the CPBR8 (Campus Party Brazil 2015) I attended the Oficina de Chão Minions, ministered by Alexandre Casemonstro every night at 11pm. The purpose of the workshop was to build a robot using recyclable material and personalizing it as a Minion.<p>
 
                 <br>
 
-                <center> <img src="images/clockwise.jpg" alt="Clockwise" width=512 height=288> </center>
-
-                <br>
-         
-                <p> The base of this project is a python script: using APIs, like pywapi (API for weather report in python), Google Calendar API (to fetch the events), and VoiceRSS (text-to-speech REST API), to gather useful information and say it out loud in a Bluetooth speaker, so you can make your daily plans without even getting out of bed! This can be helpful for blind or disabled people, and future versions of this project may be gesture controlled (using Intel Real Sense), instead of having actual buttons.</p>
+                <center> <img src="images/minion.jpg" alt="Minion" width=512 height=288> </center>
 
                 <br>
 
-                <p><b>How it works</b>: you set an event in your Google Calendar called 'Alarm' to happen everyday at the time you want Clockwise to wake you up. When the time comes, a ringtone, chosen by you, will start playing in a Bluetooth speaker, and you can press a Grove button to stop it, or the other one to snooze it. If you snooze, it will wait a couple minutes and after that it'll start ringing again. When you finally press stop, a report, consisting of some weather informations (local temperature, maximum and minimum temperature for the day, local forecast, and chance of rain), and the events for the day, set in your Google Calendar account, will be spoken in the Bluetooth speaker, so you won't miss anything from your agenda!</p>
+                <p>My group's Minion was characterized as Martin McFly from Back to the Future movie, since it was 2015, the year they travel to. Along with the Minion, we also made an Hoverboard for it to be on top of. Both the Minion and the Hoverboard were controlled using an app developed with AppInventor2.
+
+                <br> <br>
+
+                <div class="row">
+  					<div class="col-md-6">
+  						<center> <img src="images/minion2.jpg" alt="Minion" width=512 height=288> </center>
+  					</div>
+  					<div class="col-md-6">
+						<center> <img src="images/minion3.jpg" alt="Minion" width=512 height=288> </center>
+  					</div>
+				</div>
+				
+				<br>
+
+                <p> The structure of the Minion was made using a cleaning product package and the head was an isopor ball. Inside there were three Micro Servos 9g SG90 TowerPro to move its head and arms. The Hoverboard was made with cardboard and there were two DC motors and wheels so it could move forward, backward and sideways.</p>
 
                 <br>
 
                 <center>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BQpnZ6N41Jw" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jrss4upCcoI" frameborder="0" allowfullscreen></iframe>
                 </center>
 
                 <br>
 
-                <p>Source code is available at Github <a href="http://github.com/julianaklulo/clockwise">here</a>
-                <p>Instructables on how to reproduce it <a href="http://www.instructables.com/id/Clockwise-an-Intelligent-Alarm-Clock-Powered-by-In/">here</a>
-                
-                <br><br>
-                
-                <p><b>Powered by Intel Edison and using the Grove Starter Kit IoT Edition, this project was developed at Intel IoT Roadshow 2015 in November/2015 at São Paulo, Brazil.</b></p>
+                <p> The Oficina de Chão was sponsored by Intel, so each group received an Intel Galileo Gen2 board to use in the project. Since it supports python, I wrote a script that controls both the Minion and the Hoverboard depending of the commands received via Bluetooth from an android app.
 
-                <center> <img src="images/roadshow.jpg" alt="Intel IoT Roadshow"> </center>
+                <br> <br> <br>
+
+                <p>Source code is available at Github <a href="https://github.com/julianaklulo/Minion/blob/master/minion.py">here</a>
             </div>
         
 

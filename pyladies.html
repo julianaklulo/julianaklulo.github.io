@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -41,12 +42,12 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="pyladies.html">PyLadies</a></li>
+            <li class="active"><a href="pyladies.html">PyLadies</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="minion.html">Minion CPBR8</a></li>
-                <li class="active"><a href="clockwise.html">Clockwise Intel IoT Roadshow 2015</a></li>
+                <li><a href="clockwise.html">Clockwise Intel IoT Roadshow 2015</a></li>
               </ul>
             <li><a href="contact.html">Contact</a></li>
           </ul><!--
@@ -60,39 +61,51 @@
 
             <!-- Main component for a primary marketing message or call to action -->
             <div class="jumbotron">
-                <h2 class="text-center">Clockwise: an Intelligent Alarm Clock powered by Intel Edison</h2>
-                
-                <p> Clockwise is your next intelligent alarm clock: it wakes you up by saying out loud the weather conditions and your Google Calendar events for the day in a Bluetooth speaker.</p>
+                <h2 class="text-center">PyLadies São Carlos</h2>
 
-                <br>
+                <p>I cofunded the <a href="http://saocarlos.pyladies.com">PyLadies São Carlos</a> in 2014, and together with around 25 people we've been working hard in order to bring more girls to STEM fields, and also try to help more women to become active participants and leaders in the Python open-source community.
 
-                <center> <img src="images/clockwise.jpg" alt="Clockwise" width=512 height=288> </center>
+                <br> <br>
 
-                <br>
-         
-                <p> The base of this project is a python script: using APIs, like pywapi (API for weather report in python), Google Calendar API (to fetch the events), and VoiceRSS (text-to-speech REST API), to gather useful information and say it out loud in a Bluetooth speaker, so you can make your daily plans without even getting out of bed! This can be helpful for blind or disabled people, and future versions of this project may be gesture controlled (using Intel Real Sense), instead of having actual buttons.</p>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
 
-                <br>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="images/cpbr9.jpg" alt="PyLadies at CPBR9">
+                        </div>
 
-                <p><b>How it works</b>: you set an event in your Google Calendar called 'Alarm' to happen everyday at the time you want Clockwise to wake you up. When the time comes, a ringtone, chosen by you, will start playing in a Bluetooth speaker, and you can press a Grove button to stop it, or the other one to snooze it. If you snooze, it will wait a couple minutes and after that it'll start ringing again. When you finally press stop, a report, consisting of some weather informations (local temperature, maximum and minimum temperature for the day, local forecast, and chance of rain), and the events for the day, set in your Google Calendar account, will be spoken in the Bluetooth speaker, so you won't miss anything from your agenda!</p>
+                        <div class="item">
+                            <img src="images/semcomp.jpg" alt="Semcomp 18">
+                        </div>
 
-                <br>
+                        <div class="item">
+                            <img src="images/lia.jpg" alt="Encontro no LIA">
+                        </div>
 
-                <center>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BQpnZ6N41Jw" frameborder="0" allowfullscreen></iframe>
-                </center>
+                        <div class="item">
+                            <img src="images/bixos.jpg" alt="Encontro com os bixos">
+                        </div>
+                    </div>
 
-                <br>
 
-                <p>Source code is available at Github <a href="http://github.com/julianaklulo/clockwise">here</a>
-                <p>Instructables on how to reproduce it <a href="http://www.instructables.com/id/Clockwise-an-Intelligent-Alarm-Clock-Powered-by-In/">here</a>
-                
-                <br><br>
-                
-                <p><b>Powered by Intel Edison and using the Grove Starter Kit IoT Edition, this project was developed at Intel IoT Roadshow 2015 in November/2015 at São Paulo, Brazil.</b></p>
-
-                <center> <img src="images/roadshow.jpg" alt="Intel IoT Roadshow"> </center>
-            </div>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+        		</div>
         
 
         <!-- Bootstrap core JavaScript
