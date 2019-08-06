@@ -48,6 +48,11 @@ p {
   font-size: 14px;
 }
 
+.head-subtitle {
+  color: #ffffff;
+  font-size: 18px;
+}
+
 ul, ol {
   list-style: outside none none;
   margin: 0;
