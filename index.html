@@ -137,30 +137,27 @@
         <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">   
           <div class="col-lg-7 col-md-12 col-sm-12">
             <div class="contact-block">
-              <form id="contactForm">
+              <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/limpezajxl@gmail.com" method="post">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input type="text" class="form-control" id="name" name="name" placeholder="Nome" required data-error="Por favor digite o seu nome">
+                      <input type="text" class="form-control" id="full-name" name="name" placeholder="Nome" required data-error="Por favor digite o seu nome">
                       <div class="help-block with-errors"></div>
                     </div>                                 
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Por favor digite o seu email">
+                      <input type="email" placeholder="Email" id="email-address" class="form-control" name="_replyto" required data-error="Por favor digite o seu email">
                       <div class="help-block with-errors"></div>
                     </div> 
                   </div>
-                   <div class="col-md-12">
-                    <div class="form-group">
-                      <input type="text" placeholder="Assunto" id="msg_subject" class="form-control" required data-error="Por favor digite o assunto da mensagem">
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
                   <div class="col-md-12">
                     <div class="form-group"> 
-                      <textarea class="form-control" id="message" placeholder="Sua mensagem" rows="7" data-error="Escreva sua mensagem" required></textarea>
+                      <textarea class="form-control" name="message" id="message" placeholder="Sua mensagem" rows="7" data-error="Escreva sua mensagem" required></textarea>
                       <div class="help-block with-errors"></div>
+                    </div>
+                    <div>
+                      <input type="hidden" name="_subject" id="email-subject" value="Contato pelo Site">
                     </div>
                     <div class="submit-button text-left">
                       <button class="btn btn-common" id="form-submit" type="submit">Enviar</button>
