@@ -1,33 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
-        <title>Juliana Karoline's Website</title>
+    <title>Juliana Karoline's Website</title>
 
-        <!-- Bootstrap core CSS -->
-        <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
 
-        <!-- Custom styles for this template -->
-        <link href="css/navbar.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/navbar.css" rel="stylesheet">
+  </head>
 
-        <!-- Just for debugging purposes. Don't actually copy this line! -->
-        <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <body>
+    <div class="container">
 
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
-    </head>
-
-    <body>
-        <div class="container">      <!-- Static navbar -->
+      <!-- Static navbar -->
       <div class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -36,78 +28,69 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Juliana Karoline</a>
+          <a class="navbar-brand" href="index.html">Juliana Karoline</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="pyladies.html">PyLadies</a></li>
-            <li class="dropdown">
+            <li><a href="presentations.html">Presentations</a></li>
+            <li class="dropdown active">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="minion.html">Minion CPBR8</a></li>
-                <li class="active"><a href="clockwise.html">Clockwise Intel IoT Roadshow 2015</a></li>
+                <li><a href="clockwise.html">Clockwise Intel IoT Roadshow 2015</a></li>
+                <li><a href="interactive-games.html">BBC micro:bit Interactive Games</a></li>
               </ul>
-            <li><a href="contact.html">Contact</a></li>
-          </ul><!--
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="./">Default</a></li>
-            <li><a href="../navbar-static-top/">Static top</a></li>
-            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-          </ul> -->
-        </div><!--/.nav-collapse -->
+            </li>
+          </ul>
+        </div>
       </div>
 
-            <!-- Main component for a primary marketing message or call to action -->
-            <div class="jumbotron">
-                <h2 class="text-center">Clockwise: an Intelligent Alarm Clock powered by Intel Edison</h2>
-                
-                <p> Clockwise is your next intelligent alarm clock: it wakes you up by saying out loud the weather conditions and your Google Calendar events for the day in a Bluetooth speaker.</p>
+      <!-- Main component -->
+      <div class="jumbotron">
+        <h2 class="text-center">Clockwise: an Intelligent Alarm Clock powered by Intel Edison</h2>
+        
+        <p> Clockwise is your next intelligent alarm clock: it wakes you up by saying out loud the weather conditions and your Google Calendar events for the day in a Bluetooth speaker.</p>
 
-                <br>
+        <br>
 
-                <center> <img src="images/clockwise.jpg" alt="Clockwise" width=512 height=288> </center>
+        <center> <img src="images/clockwise/clockwise.jpg" alt="Clockwise" width=512 height=288> </center>
 
-                <br>
-         
-                <p> The base of this project is a python script: using APIs, like pywapi (API for weather report in python), Google Calendar API (to fetch the events), and VoiceRSS (text-to-speech REST API), to gather useful information and say it out loud in a Bluetooth speaker, so you can make your daily plans without even getting out of bed! This can be helpful for blind or disabled people, and future versions of this project may be gesture controlled (using Intel Real Sense), instead of having actual buttons.</p>
+        <br>
+  
+        <p> The base of this project is a python script: using APIs, like pywapi (API for weather report in python), Google Calendar API (to fetch the events), and VoiceRSS (text-to-speech REST API), to gather useful information and say it out loud in a Bluetooth speaker, so you can make your daily plans without even getting out of bed! This can be helpful for blind or disabled people, and future versions of this project may be gesture controlled (using Intel Real Sense), instead of having actual buttons.</p>
 
-                <br>
+        <br>
 
-                <p><b>How it works</b>: you set an event in your Google Calendar called 'Alarm' to happen everyday at the time you want Clockwise to wake you up. When the time comes, a ringtone, chosen by you, will start playing in a Bluetooth speaker, and you can press a Grove button to stop it, or the other one to snooze it. If you snooze, it will wait a couple minutes and after that it'll start ringing again. When you finally press stop, a report, consisting of some weather informations (local temperature, maximum and minimum temperature for the day, local forecast, and chance of rain), and the events for the day, set in your Google Calendar account, will be spoken in the Bluetooth speaker, so you won't miss anything from your agenda!</p>
+        <p><b>How it works</b>: you set an event in your Google Calendar called 'Alarm' to happen everyday at the time you want Clockwise to wake you up. When the time comes, a ringtone, chosen by you, will start playing in a Bluetooth speaker, and you can press a Grove button to stop it, or the other one to snooze it. If you snooze, it will wait a couple minutes and after that it'll start ringing again. When you finally press stop, a report, consisting of some weather informations (local temperature, maximum and minimum temperature for the day, local forecast, and chance of rain), and the events for the day, set in your Google Calendar account, will be spoken in the Bluetooth speaker, so you won't miss anything from your agenda!</p>
 
-                <br>
+        <br>
 
-                <center>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BQpnZ6N41Jw" frameborder="0" allowfullscreen></iframe>
-                </center>
+        <center>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BQpnZ6N41Jw" frameborder="0" allowfullscreen></iframe>
+        </center>
 
-                <br>
+        <br>
 
-                <p>Source code is available at Github <a href="http://github.com/julianaklulo/clockwise">here</a>
-                <p>Instructables on how to reproduce it <a href="http://www.instructables.com/id/Clockwise-an-Intelligent-Alarm-Clock-Powered-by-In/">here</a>
-                
-                <br><br>
-                
-                <p><b>Powered by Intel Edison and using the Grove Starter Kit IoT Edition, this project was developed at Intel IoT Roadshow 2015 in November/2015 at São Paulo, Brazil.</b></p>
+        <p>Source code is available at Github <a href="http://github.com/julianaklulo/clockwise">here</a>
+        <p>Instructables on how to reproduce it <a href="http://www.instructables.com/id/Clockwise-an-Intelligent-Alarm-Clock-Powered-by-In/">here</a>
+        
+        <br><br>
+        
+        <p><b>Powered by Intel Edison and using the Grove Starter Kit IoT Edition, this project was developed at Intel IoT Roadshow 2015 in November/2015 at São Paulo, Brazil.</b></p>
 
-                <center> <img src="images/roadshow.jpg" alt="Intel IoT Roadshow"> </center>
-            </div>
+        <center> <img src="images/clockwise/roadshow.jpg" alt="Intel IoT Roadshow"> </center>
+      </div>
+
+    </div> <!-- /container -->
         
 
-        <!-- Bootstrap core JavaScript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-            ga('create', 'UA-40245467-8', 'auto');
-            ga('send', 'pageview');
-        </script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
     </body>
 </html>
 
