@@ -7,14 +7,14 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://julianaklulo.dev/en/rss.xml</loc>
-  <lastmod>2025-08-31T07:00:00Z</lastmod>
+  <lastmod>2025-08-31T07:41:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://julianaklulo.dev/pt_br/rss.xml</loc>
-  <lastmod>2025-08-31T07:00:00Z</lastmod>
+  <loc>https://julianaklulo.dev/rss.xml</loc>
+  <lastmod>2025-08-31T07:41:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://julianaklulo.dev/sitemap.xml</loc>
-  <lastmod>2025-08-31T07:00:00Z</lastmod>
+  <lastmod>2025-08-31T07:41:00Z</lastmod>
  </sitemap>
 </sitemapindex>
