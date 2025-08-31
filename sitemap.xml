@@ -6,37 +6,37 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
-  <loc>https://julianaklulo.dev/en/</loc>
-  <lastmod>2025-08-31T06:54:00Z</lastmod>
- </url>
- <url>
   <loc>https://julianaklulo.dev/en/blog/</loc>
-  <lastmod>2025-08-31T06:54:00Z</lastmod>
+  <lastmod>2025-08-31T07:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://julianaklulo.dev/en/categories/</loc>
-  <lastmod>2025-08-31T06:54:00Z</lastmod>
+  <lastmod>2025-08-31T07:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://julianaklulo.dev/en/pages/presentations/</loc>
-  <lastmod>2025-08-31T06:54:00Z</lastmod>
+  <lastmod>2025-08-31T07:00:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="pt_br" href="https://julianaklulo.dev/pt_br/pages/apresenta%C3%A7%C3%B5es/" />
  </url>
  <url>
-  <loc>https://julianaklulo.dev/pt_br/</loc>
-  <lastmod>2025-08-31T06:54:00Z</lastmod>
+  <loc>https://julianaklulo.dev/en/pt_br/</loc>
+  <lastmod>2025-08-31T07:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://julianaklulo.dev/pt_br/blog/</loc>
-  <lastmod>2025-08-31T06:54:00Z</lastmod>
+  <lastmod>2025-08-31T07:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://julianaklulo.dev/pt_br/categories/</loc>
-  <lastmod>2025-08-31T06:54:00Z</lastmod>
+  <lastmod>2025-08-31T07:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://julianaklulo.dev/pt_br/pages/apresenta%C3%A7%C3%B5es/</loc>
-  <lastmod>2025-08-31T06:54:00Z</lastmod>
+  <lastmod>2025-08-31T07:00:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://julianaklulo.dev/en/pages/presentations/" />
+ </url>
+ <url>
+  <loc>https://julianaklulo.dev/pt_br/pt_br/</loc>
+  <lastmod>2025-08-31T07:00:00Z</lastmod>
  </url>
 </urlset>
