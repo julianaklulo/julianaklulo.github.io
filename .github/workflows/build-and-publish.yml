@@ -1,0 +1,27 @@
+on: [push]
+
+jobs:
+  nikola_build:
+    runs-on: ubuntu-latest
+    name: 'Deploy Nikola to GitHub Pages'
+    steps:
+    - name: Check out
+      uses: actions/checkout@v2
+      with:
+        ref: julianaklulo
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.12'
+
+    - name: Set up Poetry
+      uses: abatilo/actions-poetry@v2.0.0
+
+    - name: Install dependencies
+      run: poetry install
+
+    - name: Build and Deploy Nikola
+      uses: getnikola/nikola-action@v4
+      with:
+        dry_run: false
