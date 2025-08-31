@@ -1,0 +1,4 @@
+Sitemap: https://julianaklulo.dev/sitemapindex.xml
+
+User-Agent: *
+Host: julianaklulo.dev
