@@ -13,80 +13,96 @@
 <link rel="alternate" type="application/rss+xml" title="RSS (pt_br)" href="rss.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="en/rss.xml">
 <link rel="canonical" href="https://julianaklulo.dev/">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link href="assets/css/bootstrap.css" rel="stylesheet">
-<script src="assets/js/bootstrap.min.js"></script><script src="https://code.jquery.com/jquery-1.10.2.min.js"></script><link href="assets/css/bootstrap.css" rel="stylesheet">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
 
-
     
-    <header id="header" role="banner"><!-- Bootstrap navbar --><nav class="navbar navbar-default" role="navigation"><div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-pt_br">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href=".">Juliana Karoline de Sousa</a>
-      </div>
+    <header id="header" role="banner"><!-- Bootstrap 5 sticky navbar --><nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"><div class="container-fluid">
+    <!-- Brand -->
+    <a class="navbar-brand" href=".">Juliana Karoline de Sousa</a>
 
-      <div class="collapse navbar-collapse" id="navbar-collapse-pt_br">
-        <!-- Left menu -->
-        <ul class="nav navbar-nav">
-<li><a href="pages/apresenta%C3%A7%C3%B5es/">Palestras e Tutoriais</a></li>
-            <li><a href="blog/">Blog</a></li>
-        </ul>
-<!-- Right menu --><ul class="nav navbar-nav navbar-right">
-<li><a href="en/">Lendo em 🇧🇷 | Translate to 🇺🇸</a></li>
-        </ul>
+    <!-- Toggle button for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- Left menu -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<li class="nav-item">
+            <a class="nav-link" href="pages/apresenta%C3%A7%C3%B5es/">Palestras e Tutoriais</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog/">Blog</a>
+          </li>
+      </ul>
+<!-- Right menu (Language Switch) --><ul class="navbar-nav">
+<li class="nav-item">
+                  <a class="nav-link" href="en/">
+                    Lendo em 🇧🇷 | Translate to 🇺🇸
+                  </a>
+                </li>
+      </ul>
 </div>
-    </nav></header><div class="container content" id="content">
+  </div>
+</nav><div class="pt-5"></div>
+
+
+
+
+
+
+    </header><div class="container content" id="content">
         
-    <div class="jumbotron">
-          <div class="container">
-              <img src="images/index/me.png" alt="Juliana's Photo" class="img-circle center-block">
-</div>
-
-        <div class="text-center">
-            <h1>Juliana Karoline</h1>
+    <div class="py-5 bg-light">
+        <div class="container text-center">
+            <!-- Centered image -->
+            <img src="images/index/me.png" alt="Juliana's Photo" class="rounded-circle mx-auto d-block mb-4" style="width:150px; height:150px;"><h1>Juliana Karoline</h1>
             <h2>de Sousa | @julianaklulo</h2>
-        </div>
 
-        <div class="row justify-content-center mt-4">
-            <ul class="list-unstyled text-center">
+            <div class="row justify-content-center mt-4">
+                <ul class="list-unstyled text-center">
 <li>
 <a href="https://www.ufscar.br">Universidade Federal de São Carlos</a> | <b>bacharela em Ciência da Computação</b>
 </li>
-                <li>
+                    <li>
 <a href="https://saocarlos.pyladies.com">PyLadies São Carlos</a> | <b>co-fundadora &amp; organizadora</b>
 </li>
-                <li>
+                    <li>
 <a href="https://grupysanca.com.br">grupy-sanca</a> | <b>co-fundadora &amp; organizadora</b>
 </li>
-                <li>
+                    <li>
 <a href="https://omnivector.ai/">Omnivector</a> | <b>engenheira de software</b>
 </li>                
-                <li>Interesses: <b>IoT</b>, <b>robótica</b>, <b>impressão 3D</b>, <b>MicroPython</b> e <b>gatinhos</b> 🐱</li>
-            </ul>
+                    <li>Interesses: <b>IoT</b>, <b>robótica</b>, <b>impressão 3D</b>, <b>MicroPython</b> e <b>gatinhos</b> 🐱</li>
+                </ul>
 </div>
 
-        <div class="row text-center mt-4">
-            <ul class="list-inline">
-<li>
-                    <a href="https://www.linkedin.com/in/julianaklulo" target="_blank">
-                        <img src="images/index/linkedin.png" alt="LinkedIn" width="50" height="50"></a>
-                </li>
-                <li>
-                    <a href="https://www.github.com/julianaklulo" target="_blank">
-                        <img src="images/index/github.png" alt="GitHub" width="50" height="50"></a>
-                </li>
-            </ul>
+            <div class="row justify-content-center mt-4">
+                <ul class="list-inline">
+<li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/julianaklulo" target="_blank">
+                            <img src="images/index/linkedin.png" alt="LinkedIn" width="50" height="50"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.github.com/julianaklulo" target="_blank">
+                            <img src="images/index/github.png" alt="GitHub" width="50" height="50"></a>
+                    </li>
+                </ul>
 </div>
+        </div>
     </div>
 
         
-
-      </div>
+        <footer id="footer" class="bg-light text-center text-muted py-4 mt-5"><div class="container">
+                © 2025 Juliana Karoline de Sousa  <!-- Nikola already formats it -->
+                
+            </div>
+        </footer>
+</div>
     
     
     
@@ -94,6 +110,6 @@
             <script src="assets/js/jquery.min.js"></script><script src="assets/js/moment-with-locales.min.js"></script><script src="assets/js/fancydates.js"></script><!-- fancy dates --><script>
     moment.locale("pt-br");
     fancydates(0, "YYYY-MM-DD HH:mm");
-    </script><!-- end fancy dates -->
+    </script><!-- end fancy dates --><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

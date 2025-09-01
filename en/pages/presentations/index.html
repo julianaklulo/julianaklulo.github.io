@@ -12,8 +12,8 @@
 <link rel="alternate" type="application/rss+xml" title="RSS (pt_br)" href="../../../rss.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
 <link rel="canonical" href="https://julianaklulo.dev/en/pages/presentations/">
-<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="../../../assets/css/bootstrap.css" rel="stylesheet">
-<script src="../../../assets/js/bootstrap.min.js"></script><script src="https://code.jquery.com/jquery-1.10.2.min.js"></script><meta name="author" content="Juliana Karoline de Sousa">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<meta name="author" content="Juliana Karoline de Sousa">
 <meta property="og:site_name" content="Juliana Karoline de Sousa">
 <meta property="og:title" content="Talks and Tutorials">
 <meta property="og:url" content="https://julianaklulo.dev/en/pages/presentations/">
@@ -21,34 +21,49 @@
 Unfortunately, not all of them were recorded, but you can access the material on my SpeakerDeck profile.
 Feel free to get in touch if you have any questions ab">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2025-08-31T04:46:33-03:00">
+<meta property="article:published_time" content="2025-08-31T21:44:51-03:00">
 <link rel="alternate" hreflang="pt_br" href="../../../pages/apresenta%C3%A7%C3%B5es/">
 </head>
 <body>
 
-
     
-    <header id="header" role="banner"><!-- Bootstrap navbar --><nav class="navbar navbar-default" role="navigation"><div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-en">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="../../">Juliana Karoline de Sousa</a>
-      </div>
+    <header id="header" role="banner"><!-- Bootstrap 5 sticky navbar --><nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"><div class="container-fluid">
+    <!-- Brand -->
+    <a class="navbar-brand" href="../../">Juliana Karoline de Sousa</a>
 
-      <div class="collapse navbar-collapse" id="navbar-collapse-en">
-        <!-- Left menu -->
-        <ul class="nav navbar-nav">
-<li><a href=".">Talks and Tutorials</a></li>
-            <li><a href="../../blog/">Blog</a></li>
-        </ul>
-<!-- Right menu --><ul class="nav navbar-nav navbar-right">
-<li><a href="../../../">Reading in 🇺🇸 | Traduzir para 🇧🇷</a></li>
-        </ul>
+    <!-- Toggle button for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- Left menu -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<li class="nav-item">
+            <a class="nav-link" href=".">Talks and Tutorials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../blog/">Blog</a>
+          </li>
+      </ul>
+<!-- Right menu (Language Switch) --><ul class="navbar-nav">
+<li class="nav-item">
+                  <a class="nav-link" href="../../../">
+                    Reading in 🇺🇸 | Traduzir para 🇧🇷
+                  </a>
+                </li>
+      </ul>
 </div>
-    </nav></header><div class="container content" id="content">
+  </div>
+</nav><div class="pt-5"></div>
+
+
+
+
+
+
+    </header><div class="container content" id="content">
         
 <article class="post-page storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="post-title p-name entry-title" itemprop="headline name">
         <a href="." class="u-url">Talks and Tutorials</a>
@@ -72,7 +87,10 @@ Feel free to get in touch if you have any questions ab">
 <h4>Bancada do Embarcados #96 - August 29th, 2025</h4>
 <p>Practical IoT: Real-time communication with MQTT and ESP32 <strong>(pt-br)</strong> | <a href="https://speakerdeck.com/julianaklulo/espressif-summit-2025-sistemas-iot-com-esp2-e-comunicacao-via-mqtt">slides</a></p>
 <p><em>Talk originally presented at Espressif Summit 2025 (no recording) and re-presented at Bancada do Embarcados #96.</em></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DEbXrpZKX8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube.com/embed/DEbXrpZKX8g" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+  </iframe>
+</div>
 
 <hr>
 <h4>Caipyra 2025 - June 20th, 2025</h4>
@@ -85,7 +103,10 @@ Feel free to get in touch if you have any questions ab">
 <hr>
 <h4>PyCon US 2024 - May 15th, 2024</h4>
 <p>Introduction to MicroPython: getting started with BBC micro:bit <strong>(en)</strong> | <a href="https://speakerdeck.com/julianaklulo/pycon-us-2024-introduction-to-micropython-getting-started-with-bbc-micro-bit">slides</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7g2YCygot5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube.com/embed/7g2YCygot5s" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+  </iframe>
+</div>
 
 <hr>
 <h4>Python Brasil 2023 - November 2nd, 2023</h4>
@@ -94,12 +115,18 @@ Feel free to get in touch if you have any questions ab">
 <hr>
 <h4>PyCon US 2023 - April 21st, 2023</h4>
 <p>Create interactive games using electronics and MicroPython <strong>(en)</strong> | <a href="https://speakerdeck.com/julianaklulo/pycon-us-2023-create-interactive-games-using-electronics-and-micropython">slides</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/teALLngESw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube.com/embed/teALLngESw0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+  </iframe>
+</div>
 
 <hr>
 <h4>Python Brasil 2022 - October 21st, 2022</h4>
 <p>Create interactive games using electronics and MicroPython <strong>(pt-br)</strong> | <a href="https://speakerdeck.com/julianaklulo/python-brasil-2019-criando-joguinhos-interativos-com-eletronica-e-micropython">slides</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0eqef6aCK44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube.com/embed/0eqef6aCK44" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+  </iframe>
+</div>
 
 <hr>
 <h4>Python Brasil 2019 - October 25th, 2019</h4>
@@ -108,11 +135,18 @@ Feel free to get in touch if you have any questions ab">
 <hr>
 <h4>Python Brasil 2016 - October 15th, 2016</h4>
 <p>Developing IoT solutions using Python and Intel boards <strong>(pt-br)</strong> | <a href="https://speakerdeck.com/julianaklulo/python-brasil-2016-desenvolvendo-solucoes-de-iot-usando-python-com-as-placas-da-intel">slides</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/L9RLlpc0QV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube.com/embed/L9RLlpc0QV8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+  </iframe>
+</div>
     </div>
     
 
-</article>
+</article><footer id="footer" class="bg-light text-center text-muted py-4 mt-5"><div class="container">
+                © 2025 Juliana Karoline de Sousa  <!-- Nikola already formats it -->
+                
+            </div>
+        </footer>
 </div>
     
     
@@ -121,6 +155,6 @@ Feel free to get in touch if you have any questions ab">
             <script src="../../../assets/js/jquery.min.js"></script><script src="../../../assets/js/moment-with-locales.min.js"></script><script src="../../../assets/js/fancydates.js"></script><!-- fancy dates --><script>
     moment.locale("en");
     fancydates(0, "YYYY-MM-DD HH:mm");
-    </script><!-- end fancy dates -->
+    </script><!-- end fancy dates --><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

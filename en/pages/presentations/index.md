@@ -20,7 +20,13 @@ Practical IoT: Real-time communication with MQTT and ESP32 **(pt-br)** | [slides
 
 *Talk originally presented at Espressif Summit 2025 (no recording) and re-presented at Bancada do Embarcados #96.*
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DEbXrpZKX8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube.com/embed/DEbXrpZKX8g" 
+          title="YouTube video player" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+  </iframe>
+</div>
 
 ---
 
@@ -41,7 +47,13 @@ Luz, micro:bit, action! Brighten up your projects with MicroPython **(pt-br)** |
 ### PyCon US 2024 - May 15th, 2024
 Introduction to MicroPython: getting started with BBC micro:bit **(en)** | [slides](https://speakerdeck.com/julianaklulo/pycon-us-2024-introduction-to-micropython-getting-started-with-bbc-micro-bit)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7g2YCygot5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube.com/embed/7g2YCygot5s" 
+          title="YouTube video player" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+  </iframe>
+</div>
 
 ---
 
@@ -55,14 +67,26 @@ Programming an IoT robot using MicroPython and Raspberry Pi Pico **(pt-br)** | [
 ### PyCon US 2023 - April 21st, 2023
 Create interactive games using electronics and MicroPython **(en)** | [slides](https://speakerdeck.com/julianaklulo/pycon-us-2023-create-interactive-games-using-electronics-and-micropython)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/teALLngESw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube.com/embed/teALLngESw0" 
+          title="YouTube video player" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+  </iframe>
+</div>
 
 ---
 
 ### Python Brasil 2022 - October 21st, 2022
 Create interactive games using electronics and MicroPython **(pt-br)** | [slides](https://speakerdeck.com/julianaklulo/python-brasil-2019-criando-joguinhos-interativos-com-eletronica-e-micropython)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0eqef6aCK44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube.com/embed/0eqef6aCK44" 
+          title="YouTube video player" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+  </iframe>
+</div>
 
 ---
 
@@ -76,4 +100,10 @@ Controlling a robotic arm using MicroPython **(pt-br)** | [slides](https://speak
 ### Python Brasil 2016 - October 15th, 2016
 Developing IoT solutions using Python and Intel boards **(pt-br)** | [slides](https://speakerdeck.com/julianaklulo/python-brasil-2016-desenvolvendo-solucoes-de-iot-usando-python-com-as-placas-da-intel)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/L9RLlpc0QV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube.com/embed/L9RLlpc0QV8" 
+          title="YouTube video player" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+  </iframe>
+</div>
