@@ -26,38 +26,53 @@
 </%def>
 
 <%def name="html_navigation_links()">
-    <!-- Bootstrap navbar -->
-    <nav class="navbar navbar-default" role="navigation">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-${lang}">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="${_link('root', None, lang)}">${blog_title}</a>
-      </div>
+<!-- Bootstrap 5 sticky navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <!-- Brand -->
+    <a class="navbar-brand" href="${_link('root', None, lang)}">${blog_title}</a>
 
-      <div class="collapse navbar-collapse" id="navbar-collapse-${lang}">
-        <!-- Left menu -->
-        <ul class="nav navbar-nav">
-          % for url, text in navigation_links[lang]:
-            <li><a href="${url}">${text}</a></li>
-          % endfor
-        </ul>
-        <!-- Right menu -->
-        <ul class="nav navbar-nav navbar-right">
+    <!-- Toggle button for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- Left menu -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        % for url, text in navigation_links[lang]:
+          <li class="nav-item">
+            <a class="nav-link" href="${url}">${text}</a>
+          </li>
+        % endfor
+      </ul>
+
+      <!-- Right menu (Language Switch) -->
+      <ul class="navbar-nav">
         % if len(translations) > 1:
             % if lang == 'pt_br':
-                <li><a href="${_link('root', None, 'en')}">Lendo em 🇧🇷 | Translate to 🇺🇸</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="${_link('root', None, 'en')}">
+                    Lendo em 🇧🇷 | Translate to 🇺🇸
+                  </a>
+                </li>
             % elif lang == 'en':
-                <li><a href="${_link('root', None, 'pt_br')}">Reading in 🇺🇸 | Traduzir para 🇧🇷</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="${_link('root', None, 'pt_br')}">
+                    Reading in 🇺🇸 | Traduzir para 🇧🇷
+                  </a>
+                </li>
             % endif
         % endif
-        </ul>
-      </div>
-    </nav>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    ${template_hooks['menu']()}
-    ${template_hooks['menu_alt']()}
+<div class="pt-5"></div>
+
+${template_hooks['menu']()}
+${template_hooks['menu_alt']()}
 </%def>

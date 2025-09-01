@@ -1,0 +1,12 @@
+## -*- coding: utf-8 -*-
+
+<%def name="html_footer()">
+    % if content_footer:
+        <footer id="footer" class="bg-light text-center text-muted py-4 mt-5">
+            <div class="container">
+                ${content_footer}  <!-- Nikola already formats it -->
+                ${template_hooks['page_footer']()}
+            </div>
+        </footer>
+    % endif
+</%def>

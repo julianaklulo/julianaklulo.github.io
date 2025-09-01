@@ -993,8 +993,12 @@ LICENSE = ""
 #          still needs to be a dict of this format.  (it can be empty if you
 #          do not need formatting)
 # (translatable)
+
+CONTENT_FOOTER = (
+    "© {date} {author}"
+)
 CONTENT_FOOTER_FORMATS = {
-    DEFAULT_LANG: (
+    "pt_br": (
         (),
         {
             "email": BLOG_EMAIL,
@@ -1002,7 +1006,16 @@ CONTENT_FOOTER_FORMATS = {
             "date": time.gmtime().tm_year,
             "license": LICENSE
         }
-    )
+    ),
+    "en": (
+        (),
+        {
+            "email": BLOG_EMAIL,
+            "author": BLOG_AUTHOR,
+            "date": time.gmtime().tm_year,
+            "license": LICENSE
+        }
+    ),
 }
 
 # A simple copyright tag for inclusion in RSS feeds that works just

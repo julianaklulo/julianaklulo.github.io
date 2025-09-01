@@ -1,55 +1,55 @@
 ## -*- coding: utf-8 -*-
 <%inherit file="base.tmpl"/>
+<%namespace name="footer" file="base_footer.tmpl" import="*"/>
 
 <%block name="extra_head">
     ${parent.extra_head()}
-    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </%block>
 
 <%block name="content">
-    <div class="jumbotron">
-          <div class="container">
-              <img src="/images/index/me.png" alt="Juliana's Photo" class="img-circle center-block">
-          </div>
+    <div class="py-5 bg-light">
+        <div class="container text-center">
+            <!-- Centered image -->
+            <img src="/images/index/me.png" alt="Juliana's Photo" class="rounded-circle mx-auto d-block mb-4" style="width:150px; height:150px;">
 
-        <div class="text-center">
             <h1>Juliana Karoline</h1>
             <h2>de Sousa | @julianaklulo</h2>
-        </div>
 
-        <div class="row justify-content-center mt-4">
-            % if lang == 'en':
-            <ul class="list-unstyled text-center">
-                <li><a href="https://www.ufscar.br">Federal University of São Carlos</a> | <b>bachelor in Computer Science</b></li>
-                <li><a href="https://saocarlos.pyladies.com">PyLadies São Carlos</a> | <b>co-founder & organizer</b></li>
-                <li><a href="https://grupysanca.com.br">grupy-sanca</a> | <b>co-founder & organizer</b></li>
-                <li><a href="https://omnivector.ai/">Omnivector</a> | <b>software engineer</b></li>
-                <li>Interests: <b>IoT</b>, <b>robotics</b>, <b>3d printing</b>, <b>MicroPython</b> and <b>kitties</b> 🐱</li>
-            </ul>
-            % elif lang == 'pt_br':
-            <ul class="list-unstyled text-center">
-                <li><a href="https://www.ufscar.br">Universidade Federal de São Carlos</a> | <b>bacharela em Ciência da Computação</b></li>
-                <li><a href="https://saocarlos.pyladies.com">PyLadies São Carlos</a> | <b>co-fundadora & organizadora</b></li>
-                <li><a href="https://grupysanca.com.br">grupy-sanca</a> | <b>co-fundadora & organizadora</b></li>
-                <li><a href="https://omnivector.ai/">Omnivector</a> | <b>engenheira de software</b></li>                
-                <li>Interesses: <b>IoT</b>, <b>robótica</b>, <b>impressão 3D</b>, <b>MicroPython</b> e <b>gatinhos</b> 🐱</li>
-            </ul>
-            % endif
-        </div>
+            <div class="row justify-content-center mt-4">
+                % if lang == 'en':
+                <ul class="list-unstyled text-center">
+                    <li><a href="https://www.ufscar.br">Federal University of São Carlos</a> | <b>bachelor in Computer Science</b></li>
+                    <li><a href="https://saocarlos.pyladies.com">PyLadies São Carlos</a> | <b>co-founder & organizer</b></li>
+                    <li><a href="https://grupysanca.com.br">grupy-sanca</a> | <b>co-founder & organizer</b></li>
+                    <li><a href="https://omnivector.ai/">Omnivector</a> | <b>software engineer</b></li>
+                    <li>Interests: <b>IoT</b>, <b>robotics</b>, <b>3d printing</b>, <b>MicroPython</b> and <b>kitties</b> 🐱</li>
+                </ul>
+                % elif lang == 'pt_br':
+                <ul class="list-unstyled text-center">
+                    <li><a href="https://www.ufscar.br">Universidade Federal de São Carlos</a> | <b>bacharela em Ciência da Computação</b></li>
+                    <li><a href="https://saocarlos.pyladies.com">PyLadies São Carlos</a> | <b>co-fundadora & organizadora</b></li>
+                    <li><a href="https://grupysanca.com.br">grupy-sanca</a> | <b>co-fundadora & organizadora</b></li>
+                    <li><a href="https://omnivector.ai/">Omnivector</a> | <b>engenheira de software</b></li>                
+                    <li>Interesses: <b>IoT</b>, <b>robótica</b>, <b>impressão 3D</b>, <b>MicroPython</b> e <b>gatinhos</b> 🐱</li>
+                </ul>
+                % endif
+            </div>
 
-        <div class="row text-center mt-4">
-            <ul class="list-inline">
-                <li>
-                    <a href="https://www.linkedin.com/in/julianaklulo" target="_blank">
-                        <img src="/images/index/linkedin.png" alt="LinkedIn" width="50" height="50">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.github.com/julianaklulo" target="_blank">
-                        <img src="/images/index/github.png" alt="GitHub" width="50" height="50">
-                    </a>
-                </li>
-            </ul>
+            <div class="row justify-content-center mt-4">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/julianaklulo" target="_blank">
+                            <img src="/images/index/linkedin.png" alt="LinkedIn" width="50" height="50">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.github.com/julianaklulo" target="_blank">
+                            <img src="/images/index/github.png" alt="GitHub" width="50" height="50">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </%block>
