@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html prefix="" lang="pt_br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>WifiCom | Juliana Karoline de Sousa</title>
+<link href="../../../../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../../../../../assets/css/poole.css" rel="stylesheet" type="text/css">
+<link href="../../../../../assets/css/lanyon.css" rel="stylesheet" type="text/css">
+<link href="../../../../../assets/css/code.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+<link rel="alternate" type="application/rss+xml" title="RSS (pt_br)" href="../../../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../../../../en/rss.xml">
+<link rel="canonical" href="https://julianaklulo.dev/posts/2025/09/07/wificom/">
+<!--[if lt IE 9]><script src="../../../../../assets/js/html5.js"></script><![endif]--><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<meta name="author" content="Juliana Karoline de Sousa">
+<link rel="prev" href="../bem-vindo/" title="Bem vindo!" type="text/html">
+<meta property="og:site_name" content="Juliana Karoline de Sousa">
+<meta property="og:title" content="WifiCom">
+<meta property="og:url" content="https://julianaklulo.dev/posts/2025/09/07/wificom/">
+<meta property="og:description" content="Meu amigo Lucas me iniciou no mundo dos V-Pets de Digimon, me emprestando um DM20 para brincar.
+
+A ideia era fazer um WifiCom, que é um dispositivo físico que utiliza uma Raspberry Pi Pico W e alguns ">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2025-09-07T18:34:06-03:00">
+<link rel="alternate" hreflang="en" href="../../../../../en/posts/2025/09/07/wificom/">
+</head>
+<body>
+
+    
+    <header id="header" role="banner"><!-- Bootstrap 5 sticky navbar --><nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"><div class="container-fluid">
+    <!-- Brand -->
+    <a class="navbar-brand" href="../../../../../">Juliana Karoline de Sousa</a>
+
+    <!-- Toggle button for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- Left menu -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<li class="nav-item">
+            <a class="nav-link" href="../../../../../pages/apresenta%C3%A7%C3%B5es/">Palestras e Tutoriais</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../../../../blog/">Blog</a>
+          </li>
+      </ul>
+<!-- Right menu (Language Switch) --><ul class="navbar-nav">
+<li class="nav-item">
+                          <a class="nav-link" href="../../../../../en/posts/2025/09/07/wificom/">
+                    Lendo em 🇧🇷 | Translate to 🇺🇸
+                  </a>
+                </li>
+      </ul>
+</div>
+  </div>
+</nav><div class="pt-5"></div>
+
+
+
+
+
+
+    </header><div class="container content" id="content">
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="post-title p-name entry-title" itemprop="headline name">
+        <a href="." class="u-url">WifiCom</a>
+    </h1>
+
+    <div class="metadata">
+        <p class="byline author vcard">
+            <span class="byline-name fn">Juliana Karoline de Sousa</span>
+        </p>
+        <p class="dateline">
+            <a href="." rel="bookmark">
+                <time class="post-date published dt-published" datetime="2025-09-07T18:34:06-03:00" itemprop="datePublished" title="07/09/2025 18:34">
+                    07/09/2025 18:34
+                </time></a>
+        </p>
+    </div>
+    
+
+    <div class="metadata posttranslations translations">
+                <p>
+                    <a href="../../../../../en/posts/2025/09/07/wificom/" rel="alternate" hreflang="en">
+                        Translate to 🇺🇸
+                    </a>
+                </p>
+    </div>
+
+</header><div class="e-content entry-content" itemprop="articleBody text">
+    <p>Meu amigo Lucas me iniciou no mundo dos V-Pets de Digimon, me emprestando um DM20 para brincar.</p>
+<p><img src="../../../../../images/wificom/DM20_VPet.png" width="200" height="300"></p>
+<p>A ideia era fazer um <a href="https://wificom.dev">WifiCom</a>, que é um dispositivo físico que utiliza uma Raspberry Pi Pico W e alguns componentes eletrônicos
+(tela OLED, botões, buzzer) para conectar com o V-Pet em aplicações online, como o <a href="https://w0rld.io">w0rld</a>.</p>
+<p>Claramente fiquei super animada em construir um WifiCom, dado que poderia aprimorar minhas habilidades de montagem de circuitos, além de modelagem 3D para fazer o case.</p>
+<!-- TEASER_END -->
+
+<h3>Montagem e configuração</h3>
+<p>O primeiro passo foi montar o circuito na protoboard. No site do WifiCom tem o <a href="https://docs.wificom.dev/picow_breadboard/">esquemático do circuito</a> com diversos módulos.
+No caso do DM20, utilizei apenas o módulo de "prongs" (metais no topo do V-Pet usados para a comunicação). A montagem foi bem simples, dado que o circuito não é muito complexo.</p>
+<p>Após montar o circuito, é preciso configurar o firmware na placa. Primeiramente instalei o <a href="https://adafruit-circuit-python.s3.amazonaws.com/bin/raspberry_pi_pico_w/en_US/adafruit-circuitpython-raspberry_pi_pico_w-en_US-9.2.8.uf2">CircuitPython 9.2.8</a>
+na Raspberry Pi Pico W. Em seguida, usei o script <a href="https://github.com/mechawrench/wificom-update-tool">wificom-update-tool</a> para instalar o firwmare do WifiCom no dispositivo.</p>
+<p>O último passo foi editar o arquivo de configuração (<code>secrets.json</code>). É nesse arquivo que fica o SSID e a senha da rede WiFi, além das chaves de acesso do WifiCom (disponíveis na dashboard, após criar uma conta).</p>
+<p>Chegou a hora de testar o circuito: conectei os jumpers nos "prongs" do V-Pet, invoquei meu Agumon dentro do w0rld, e funcionou!</p>
+<p><img src="../../../../../images/wificom/WifiCom_Protoboard.gif" width="300" height="300"></p>
+<h3>Planejando a placa do circuito</h3>
+<p>Meu plano era transferir o circuito para uma placa para circuito impresso perfurada dupla face. Foi a minha primeira vez fazendo isso, e logo de cara percebi o desafio que seria encaixar todos os componentes de forma compacta.</p>
+<p>Passei vários dias planejando como ficaria o circuito, desenhando no papel as trilhas e o posicionamento dos componentes.</p>
+<p><img src="../../../../../images/wificom/Desenho_Circuito.jpg" width="400" height="250"></p>
+<p>Finalmente me dei por vencida e decidir fazer um circuito modular: uma placa para os botões e outra para o módulo de "prongs". Os demais componentes ficariam fixos ao case.</p>
+<p>Cortei a placa e soldei os componentes, deixando os fios no tamanho exato para encaixar certinho. Fiz o teste do circuito e tudo estava funcionando corretamente.</p>
+<p><img src="../../../../../images/wificom/Circuito_Modular.png" width="250" height="300"></p>
+<h3>Modelando o case</h3>
+<p>Desde que comprei a impressora 3D, meu objetivo era aprender a modelar usando o <a href="https://www.freecad.org/">FreeCAD</a>, e recentemente comecei a trabalhar nisso.
+Esse projeto foi a primeira oportunidade de colocar meus conhecimentos novos em prática.</p>
+<p>Modelei um case com duas partes, que se fixam com parafusos M3. Cortei buracos para a tela OLED, o LED e os botões, além das portas USB da Raspberry Pi Pico W e do circuito de carga da bateria.
+Adicionei também uma chave liga-desliga na parte de baixo, e o encaixe para o circuito de "prongs" na parte de cima.</p>
+<p><img src="../../../../../images/wificom/Case.png" width="600" height="250"></p>
+<p>Não acertei as dimensões de primeira, foram algumas tentativas e erros até chegar na peça final. Esqueci de adicionar um furo para o pino do V-Pet, tive que fazer um manulmente.</p>
+<h3>Resultado final</h3>
+<p>Com o circuito finalizado, restava apenas decidir o que utilizar para fazer o contato do circuito de "prongs". Minha primeira tentativa foi colocar dois parafusos, pois não encontrei
+a fita de níquel que vi sendo recomendada por outras pessoas que construíram o projeto. Mas depois de muita busca, consegui comprar como "fita para solda de baterial 18650".
+O acabamento ficou bem melhor com a fita de níquel.</p>
+<p><img src="../../../../../images/wificom/Prongs.png" width="600" height="250"></p>
+<p>Por fim, o WifiCom junto com o V-Pet. O tamanho ficou similar, sendo fácil de conectar os dois.</p>
+<p><img src="../../../../../images/wificom/Resultado_Final.jpg" width="350" height="350"></p>
+<p>Esse foi um dos projetos mais completos que já fiz, dado que envolveu desde a confecção do circuito à modelagem do case. Fiquei bem feliz com o resultado!</p>
+    </div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../bem-vindo/" rel="prev" title="Bem vindo!">Post anterior</a>
+            </li>
+        </ul></nav></aside></article><footer id="footer" class="bg-light text-center text-muted py-4 mt-5"><div class="container">
+                © 2025 Juliana Karoline de Sousa  <!-- Nikola already formats it -->
+                
+            </div>
+        </footer>
+</div>
+    
+    
+    
+    
+            <script src="../../../../../assets/js/jquery.min.js"></script><script src="../../../../../assets/js/moment-with-locales.min.js"></script><script src="../../../../../assets/js/fancydates.js"></script><!-- fancy dates --><script>
+    moment.locale("pt-br");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates --><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
