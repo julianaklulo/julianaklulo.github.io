@@ -70,6 +70,8 @@ I also added a power switch at the bottom and a slot for the prongs circuit at t
 
 I didn’t get the dimensions right on the first try, it took a few rounds of trial and error before I got the final piece. I ended up forgetting to add a hole for the V-Pet pin and had to make one manually.
 
+If you want to use the model I created, it's available in my [Thingiverse](https://www.thingiverse.com/thing:7139682) profile.
+
 ## Final result
 
 With the circuit completed, the last step was deciding what to use for the prongs contact. My first attempt was using two screws, since I couldn’t find

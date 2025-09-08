@@ -26,7 +26,7 @@ O primeiro passo foi montar o circuito na protoboard. No site do WifiCom tem o [
 No caso do DM20, utilizei apenas o módulo de "prongs" (metais no topo do V-Pet usados para a comunicação). A montagem foi bem simples, dado que o circuito não é muito complexo.
 
 Após montar o circuito, é preciso configurar o firmware na placa. Primeiramente instalei o [CircuitPython 9.2.8](https://adafruit-circuit-python.s3.amazonaws.com/bin/raspberry_pi_pico_w/en_US/adafruit-circuitpython-raspberry_pi_pico_w-en_US-9.2.8.uf2)
-na Raspberry Pi Pico W. Em seguida, usei o script [wificom-update-tool](https://github.com/mechawrench/wificom-update-tool) para instalar o firwmare do WifiCom no dispositivo.
+na Raspberry Pi Pico W. Em seguida, usei o script [wificom-update-tool](https://github.com/mechawrench/wificom-update-tool) para instalar o firmware do WifiCom no dispositivo.
 
 O último passo foi editar o arquivo de configuração (`secrets.json`). É nesse arquivo que fica o SSID e a senha da rede WiFi, além das chaves de acesso do WifiCom (disponíveis na dashboard, após criar uma conta).
 
@@ -42,7 +42,7 @@ Passei vários dias planejando como ficaria o circuito, desenhando no papel as t
 
 <img src="/images/wificom/Desenho_Circuito.jpg" width="400" height="250"/>
 
-Finalmente me dei por vencida e decidir fazer um circuito modular: uma placa para os botões e outra para o módulo de "prongs". Os demais componentes ficariam fixos ao case.
+Finalmente me dei por vencida e decidi fazer um circuito modular: uma placa para os botões e outra para o módulo de "prongs". Os demais componentes ficariam fixos ao case.
 
 Cortei a placa e soldei os componentes, deixando os fios no tamanho exato para encaixar certinho. Fiz o teste do circuito e tudo estava funcionando corretamente.
 
@@ -58,13 +58,15 @@ Adicionei também uma chave liga-desliga na parte de baixo, e o encaixe para o c
 
 <img src="/images/wificom/Case.png" width="600" height="250"/>
 
-Não acertei as dimensões de primeira, foram algumas tentativas e erros até chegar na peça final. Esqueci de adicionar um furo para o pino do V-Pet, tive que fazer um manulmente.
+Não acertei as dimensões de primeira, foram algumas tentativas e erros até chegar na peça final. Esqueci de adicionar um furo para o pino do V-Pet, tive que fazer um manualmente.
+
+Caso queira utilizar o modelo que criei, ele está disponível no meu perfil no [Thingiverse](https://www.thingiverse.com/thing:7139682).
 
 ## Resultado final
 
 Com o circuito finalizado, restava apenas decidir o que utilizar para fazer o contato do circuito de "prongs". Minha primeira tentativa foi colocar dois parafusos, pois não encontrei
-a fita de níquel que vi sendo recomendada por outras pessoas que construíram o projeto. Mas depois de muita busca, consegui comprar como "fita para solda de baterial 18650".
-O acabamento ficou bem melhor com a fita de níquel.
+a fita de níquel que vi sendo recomendada por outras pessoas que construíram o projeto. Mas depois de muita busca, consegui comprar como "fita para solda de bateria 18650".
+O acabamento ficou bem melhor com a fita!
 
 <img src="/images/wificom/Prongs.png" width="600" height="250"/>
 
